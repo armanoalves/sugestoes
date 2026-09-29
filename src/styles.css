@@ -1,0 +1,150 @@
+.alura-helper-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  cursor: help;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.alura-helper-badge--spam {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.alura-helper-badge--category {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+}
+
+.alura-helper-badge--duplicate {
+  background: #ede9fe;
+  color: #5b21b6;
+  border: 1px solid #c4b5fd;
+}
+
+.alura-helper-badge--old {
+  background: #e0f2fe;
+  color: #075985;
+  border: 1px solid #7dd3fc;
+}
+
+.alura-helper-row--old {
+  border-left: 3px solid #7dd3fc;
+}
+
+.alura-presence-badge {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #94a3b8;
+}
+
+.alura-presence-banner {
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 6px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #92400e;
+}
+
+.alura-helper-summary {
+  padding: 8px 14px;
+  margin-bottom: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 12px;
+  color: #475569;
+}
+
+/* ── Respostas Rápidas ─────────────────────────────────────────────────── */
+
+.alura-reply-panel {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.alura-reply-panel-header {
+  font-size: 13px;
+  font-weight: 700;
+  color: #166534;
+  margin-bottom: 8px;
+}
+
+.alura-reply-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.alura-reply-btn {
+  padding: 5px 12px;
+  border: 1px solid #86efac;
+  border-radius: 6px;
+  background: #fff;
+  color: #166534;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+
+.alura-reply-btn:hover {
+  background: #dcfce7;
+  border-color: #22c55e;
+}
+
+.alura-reply-btn:active {
+  transform: scale(0.97);
+}
+
+.alura-reply-btn--copied {
+  background: #22c55e;
+  color: #fff;
+  border-color: #16a34a;
+}
+
+/* Toast */
+
+.alura-reply-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  padding: 8px 18px;
+  background: #1e293b;
+  color: #fff;
+  font-size: 13px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.25s, transform 0.25s;
+  z-index: 99999;
+  pointer-events: none;
+}
+
+.alura-reply-toast--visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
